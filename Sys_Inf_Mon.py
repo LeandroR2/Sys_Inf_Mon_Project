@@ -3,7 +3,7 @@ import psutil
 import time
 import pyodbc
 con = pyodbc.connect('Driver={SQL Server};'
-                     'Server=LapPer550\SQLEXPRESS;'
+                     'Server=local\SQLEXPRESS;' # local connection
                      'Database=System_information;'
                      'Truested_Connection=yes;')
 cursor= con.cursor()
